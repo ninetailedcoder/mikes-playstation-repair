@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.companyLogo {
+  width: 20%;
+  height: auto;
+  margin-right: 10px; /* Adjust the margin as needed */
+  border-right: 3px solid black; /* Adds the vertical line */
+  padding-right: 10px; /* Adds some space between the line and the image */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+}
+

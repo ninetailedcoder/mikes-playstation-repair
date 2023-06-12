@@ -1,17 +1,21 @@
-import {Row, Col, Container} from 'reactstrap'
+import {Row, Col, Container, Navbar, NavbarToggler} from 'reactstrap'
 //import {NavLink} from 'react-router-dom'
-
+import Logo from '../assets/imgs/Company Logo.jpg'
+import Navigation from '../components/navigation'
 const Home = () => {
     return (
         <Container>
             <Row>
-                <Col>
-                    <h1>Home Page icon</h1>
+                <Col className='logo-container' xs={6} lg={8} >
+                    <img className="companyLogo" src={Logo} alt="Company Logo" />
+                    <div>
+                        <p>Mike and Mikes Playstation Repair </p>
+                        <hr />
+                        <p>Servicing MN, WI, and SD</p>
+                    </div>
                 </Col>
                 <Col>
-                </Col>
-                <Col>
-                    <h2>navbar</h2>
+                    <Navigation />
                 </Col>
             </Row>
             <Row>
