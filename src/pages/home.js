@@ -2,6 +2,8 @@ import {Row, Col, Container, Navbar, NavbarToggler} from 'reactstrap'
 //import {NavLink} from 'react-router-dom'
 import Logo from '../assets/imgs/Company Logo.jpg'
 import Navigation from '../components/navigation'
+import CarouselComponent from '../components/carousel'
+
 const Home = () => {
     return (
         <Container>
@@ -20,8 +22,7 @@ const Home = () => {
             </Row>
             <Row>
                 <Col>
-                    <h2>carousel</h2>
-                    <p>random information in carousel</p>
+                    <CarouselComponent />
                 </Col>
             </Row>
             <Row>
