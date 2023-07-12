@@ -38,10 +38,9 @@
 }
 
 .companyLogo {
-  width: 20%;
+  width: 70%;
   height: auto;
   margin-right: 10px; /* Adjust the margin as needed */
-  border-right: 3px solid black; /* Adds the vertical line */
   padding-right: 10px; /* Adds some space between the line and the image */
 }
 
@@ -54,20 +53,60 @@
   color: white;
 }
 
-.carousel {
-  width: 100%;
-  height: 800px; /* Adjust the height as needed */
+.carousel .slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel .slide img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
-.carousel .legend,
-.carousel .header {
-  color: black; /* Set the color of the caption text and header */
-  font-size: 18px; /* Adjust the font size as needed */
-  text-align: center;
-  margin: 10px;
+.carousel .legend {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color as needed */
+  color: white; /* Adjust the text color as needed */
+  padding: 10px 20px;
+  margin: 0;
+  display: inline-block; /* Wrap the background around the content */
 }
+
+.carousel .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); Adjust the background color as needed */
+  color: white; /* Adjust the text color as needed */
+  padding: 10px;
+  margin: 0;
+}
+
+.banner-row {
+  background-image: url('/src/images/stockplaystation3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  /* rounded corners */
+  border-radius: 10px;
+  /* streach image to fit entire web page */
+  width: 100%;
+  
+}
+
+.custom-mb {
+  margin-bottom: 200px;
+}
+
+.service-button{
+  margin-left: 100px;
+  padding-top: 10px;
+}
+

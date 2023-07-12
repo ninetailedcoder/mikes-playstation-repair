@@ -2,32 +2,59 @@ import {Row, Col, Container, Navbar, NavbarToggler} from 'reactstrap'
 //import {NavLink} from 'react-router-dom'
 import Logo from '../assets/imgs/Company Logo.jpg'
 import Navigation from '../components/navigation'
-import CarouselComponent from '../components/carousel'
+import { useState } from 'react';
+import ps3ps4 from '../images/ps3-ps4.png'
 
 const Home = () => {
+    const [selectedOption, setSelectedOption] = useState(''); // State to track the selected option
+
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
     return (
         <Container>
             <Row>
-                <Col className='logo-container' xs={6} lg={8} >
+                <Col className='logo-container' xs={6} lg={2} >
                     <img className="companyLogo" src={Logo} alt="Company Logo" />
-                    <div>
-                        <p>Mike and Mikes Playstation Repair </p>
-                        <hr />
-                        <p>Servicing MN, WI, and SD</p>
-                    </div>
                 </Col>
-                <Col>
+                <Col className="d-flex justify-content-center" lg={8}>
                     <Navigation />
                 </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <CarouselComponent />
+                <Col className="mt-4" lg={2}>
+                    <h4><i className="fa-solid fa-right-to-bracket fa-sm" /> Login</h4>
                 </Col>
             </Row>
-            <Row>
+            <Row className='mt-2 banner-row'>
+                <Col xs="auto">
+                </Col>
                 <Col>
-                    <h2> why work with us </h2>
+                </Col>
+                <Col xs='auto' className="d-flex justify-content-end align-items-end">
+                    <select className="form-select form-select-lg custom-mb" value={selectedOption} onChange={handleOptionChange}>
+                        <option value="">What can we fix for you?</option>
+                        <option value="option1">YLOD(Yellow light of death)</option>
+                        <option value="option2">HDMI Repair</option>
+                        <option value="option3">Bluray / Disk drive</option>
+                        <option value="option3">Power Supply</option>
+                        <option value="option3">Bluray / Disk drive</option>
+                        <option value="option3">Other</option>
+                    </select>
+                </Col>
+            </Row>
+            <Row className='mt-2 rounded' style={{backgroundColor: 'red'}}>
+                <Col lg={5} className='d-flex justify-content-start mt-4'>
+                    <h2> Why work with us ! </h2>
+                </Col>
+                <Col lg={5}>
+                </Col>
+                <Col lg={5} className='d-flex justify-content-start'>
+                    <p>Mike has been repairing ps3 since thier initial release date not only that mike has owned every generartion of playstation so his knowlege of the consoleds is unmatched in the twin cities</p>
+                </Col>
+                <Col lg={6}>
+                    <img src={ps3ps4} alt="ps3 and ps4" />
+                </Col>
+                <Col lg={12}>
+                    <button className='btn btn-primary btn-lg d-flex justify-content-start service-button'>services</button>
                 </Col>
             </Row>
             <Row>
