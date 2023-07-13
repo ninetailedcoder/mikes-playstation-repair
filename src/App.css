@@ -110,3 +110,17 @@
   padding-top: 10px;
 }
 
+.stockphoto {
+  width: 70%;
+  height: auto;
+}
+
+.stockplaystaion {
+  width: 85%;
+  height: auto;
+}
+
+.nav-link{
+  margin-left: 10px;
+}
+
