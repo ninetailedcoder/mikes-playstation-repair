@@ -15,7 +15,7 @@ const Header = () => (
             <Col className="d-flex justify-content-center" lg={8}>
                 <Navigation />
             </Col>
-            <Col className="mt-4" lg={2}>
+            <Col className="mt-5" lg={2}>
                 <h4><i className="fa-solid fa-right-to-bracket fa-sm" /> Login</h4>
             </Col>
         </Row>

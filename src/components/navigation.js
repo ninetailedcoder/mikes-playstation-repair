@@ -8,7 +8,7 @@ const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <Navbar className="rounded custom-navbar" style={{backgroundColor:"red"}}  expand="md" sticky="top">
+    <Navbar className="rounded custom-navbar"  expand="md" sticky="top">
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>
         <Nav className="ms-auto" navbar>

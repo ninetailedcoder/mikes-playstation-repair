@@ -106,8 +106,7 @@
 }
 
 .service-button{
-  margin-left: 100px;
-  padding-top: 10px;
+  margin-bottom: 10px;
 }
 
 .stockphoto {
@@ -124,3 +123,10 @@
   margin-left: 10px;
 }
 
+.funfact{
+  margin-left: 40px;
+}
+
+.transparent-button {
+  background-color: rgba(0, 0, 0, 0); /* Transparent black */
+}
