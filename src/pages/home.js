@@ -10,6 +10,7 @@ import stockphoto3 from '../assets/imgs/stock photo 3.jpg';
 import stockphoto4 from '../assets/imgs/stock photo 4.jpg';
 import stockphoto5 from '../images/stockplaystation4.webp'
 import Footer from '../components/Footer'
+import Header from '../components/Header';
 
 const Home = () => {
     const [selectedOption, setSelectedOption] = useState(''); // State to track the selected option
@@ -20,15 +21,7 @@ const Home = () => {
     return (
         <Container fluid>
             <Row>
-                <Col className='logo-container' xs={6} lg={2} >
-                    <img className="companyLogo" src={Logo} alt="Company Logo" />
-                </Col>
-                <Col className="d-flex justify-content-center" lg={8}>
-                    <Navigation />
-                </Col>
-                <Col className="mt-4" lg={2}>
-                    <h4><i className="fa-solid fa-right-to-bracket fa-sm" /> Login</h4>
-                </Col>
+                <Header />
             </Row>
             <Row className='mt-5 banner-row'>
                 <Col xs="auto">
@@ -47,7 +40,7 @@ const Home = () => {
                     </select>
                 </Col>
             </Row>
-            <Row className='mt-2 rounded' style={{backgroundColor: 'red'}}>
+            <Row className='mt-2' style={{backgroundColor: 'red'}}>
                 <Col lg={5} className='d-flex justify-content-start mt-4'>
                     <h2> Fun Fact! </h2>
                 </Col>
@@ -84,7 +77,7 @@ const Home = () => {
                     <p>99.9% success rate for YLOD ( Yellow light of death )</p>
                 </Col>
             </Row>
-            <Row className='mt-5 text-white rounded' style={{backgroundColor: 'black'}}>
+            <Row className='mt-5 text-white' style={{backgroundColor: 'black'}}>
                 <Col>
                     <img src={stockphoto5} alt="stock playstation 4" className='stockplaystaion rounded'/>
                 </Col>
