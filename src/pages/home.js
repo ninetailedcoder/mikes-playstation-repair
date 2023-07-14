@@ -20,7 +20,7 @@ const Home = () => {
   };
   return (
     <Container fluid>
-      <Row style={{ backgroundColor: "blue" }} className="text-white">
+      <Row style={{ backgroundColor: "blue",height: '80px' }}  className="text-white align-items-center">
         <Header />
       </Row>
       <Row className="mt-5 banner-row">
@@ -44,9 +44,9 @@ const Home = () => {
       </Row>
       <Row className="mt-2 pt-4" style={{ backgroundColor: "red" }}>
         <Col lg={6} className="d-flex flex-column text-start funfact">
-          <h2>Fun Fact!</h2>
+          <h2>Repairs while you wait!</h2>
           <p>
-            Mike has been repairing PS3 since their initial release date. Not
+            Mike has been repairing PS3 & PS4's since their initial release date. Not
             only that, Mike has owned every generation of PlayStation, <b>so his
             knowledge of the consoles is unmatched in the Twin Cities!</b>
           </p>
@@ -63,7 +63,9 @@ const Home = () => {
         <Col lg={12} className="mb-2">
           <h2>Why work with us!</h2>
         </Col>
-        <Col>
+      </Row>
+      <Row className="mt-5">
+        <Col >
           <img
             src={stockphoto3}
             alt="repair photo 3"

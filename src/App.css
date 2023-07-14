@@ -38,11 +38,12 @@
 }
 
 .companyLogo {
-  width: 70%;
+  max-width: 50%;
   height: auto;
-  margin-right: 10px; /* Adjust the margin as needed */
-  padding-right: 10px; /* Adds some space between the line and the image */
+  margin-left: 10px; /* Adjust the margin as needed */
+  padding-left: 10px; /* Adds some space between the line and the image */
 }
+
 
 .logo-container {
   display: flex;
@@ -129,4 +130,8 @@
 
 .transparent-button {
   background-color: rgba(0, 0, 0, 0); /* Transparent black */
+}
+
+.footer-container-fluid .nav-link {
+  margin-right: 30px;
 }
