@@ -6,7 +6,7 @@ import Navigation from '../components/navigation';
 
 const Header = () => (
   <Container fluid>
-    <Row className="align-items-center" style={{ height: '100%' }}>
+    <Row className="align-items-center" style={{ height: '100%', backgroundColor: 'blue' }}>
       <Col className='logo-container' xs={6} lg={2}>
         <img className="companyLogo " src={Logo} alt="Company Logo" />
       </Col>

@@ -13,7 +13,7 @@ const Footer = () => (
                 <p style={{paddingLeft: '30px'}}>Serving Minnesota, WI, SD</p>
             </Col>
             <Col className="d-flex justify-content-center mt-5" lg={8}>
-                <NavLink className="nav-link" to="/home">Home</NavLink>
+                <NavLink className="nav-link" to="/">Home</NavLink>
                 <NavLink className="nav-link" to="/about">About</NavLink>
                 <NavLink className="nav-link" to="/contact">Contact</NavLink>
             </Col>

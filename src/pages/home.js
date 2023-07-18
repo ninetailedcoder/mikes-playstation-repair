@@ -20,7 +20,7 @@ const Home = () => {
   };
   return (
     <Container fluid>
-      <Row style={{ backgroundColor: "blue",height: '80px' }}  className="text-white align-items-center">
+      <Row style={{ height: '80px' }}  className="text-white align-items-center">
         <Header />
       </Row>
       <Row className="mt-5 banner-row">
@@ -113,6 +113,7 @@ const Home = () => {
           />
         </Col>
         <Col className="mt-5">
+          <h2>Don't wait 5 weeks for sony repairs!</h2>
           <p>
             Here all we repair is playstaions and playstations only so the
             knowlege here is bar none the best in the local industry
