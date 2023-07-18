@@ -2,6 +2,7 @@ import { Col, Container, Row } from "reactstrap";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { apiKey } from "../components/config";
 
 
 const Contact = () => {
@@ -28,7 +29,7 @@ const Contact = () => {
                 height="250"
                 frameborder="0"
                 style={{ border: 0 }}
-                src={`https://www.google.com/maps/embed/v1/place?q=275+4TH+STREET+E%2C+SAINT+PAUL%2C+MN+55101&key=AIzaSyAgaalscUq8MacRHUVinXDHOd4J4msye14`}
+                src={`https://www.google.com/maps/embed/v1/place?q=275+4TH+STREET+E%2C+SAINT+PAUL%2C+MN+55101&key=${apiKey}`}
                 allowfullscreen
             ></iframe>
             </div>
