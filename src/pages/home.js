@@ -46,9 +46,7 @@ const Home = () => {
         <Col lg={6} className="d-flex flex-column text-start funfact">
           <h2>Repairs while you wait!</h2>
           <p>
-            Mike has been repairing PS3 & PS4's since their initial release date. Not
-            only that, Mike has owned every generation of PlayStation, <b>so his
-            knowledge of the consoles is unmatched in the Twin Cities!</b>
+            Where else can you go and have your system repaired while you wait? <b>99% of our services are done while you wait, watch, & learn very important details about your beloved Playstation 3.</b>
           </p>
           <div className="d-flex justify-content-start">
             <button className='btn btn-secondary btn-md service-button btn-outline-dark text-black rounded-pill px-4 bg-transparent' style={{ border: '2px solid black', width: '120px' }}>services</button>
