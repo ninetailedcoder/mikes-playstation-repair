@@ -15,9 +15,11 @@ const About= () => {
             </Row>
             <Row>
                 <Col>
+                    <h3>FAQs</h3>
                     <AccordionCards />
                 </Col>
-                <Col style={{backgroundColor: "black",margin: '0px 30px'}} className="text-white rounded">
+                <Col style={{backgroundColor: "black",margin: '200px 30px', height: '250px'}} className="d-flex flex-column text-white rounded">
+                    <h3>About Mike</h3>
                     <p>
                     Mike has been repairing PS3 & PS4's since their initial release date. Not
                     only that, Mike has owned every generation of PlayStation, so his
