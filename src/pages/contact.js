@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { apiKey } from "../components/config";
+import { Form } from "react-bootstrap";
 
 
 const Contact = () => {
@@ -50,6 +51,43 @@ const Contact = () => {
             St. Paul, MN 55106</li>
         </ol>
         <p className="text-start"><b>There is a $20.00 return shipping charge and all repairs take about 5 to 7 business days.</b></p>
+      </Row>
+      <Row>
+        <Form className="text-start" style={{margin: '20px 20px'}}>
+          <Form.Group className="mb-3" controlId="name">
+            <Form.Label htmlFor="name">Name</Form.Label>
+            <Form.Control type="text" placeholder="Name" />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="email">
+            <Form.Label htmlFor="email">Email address</Form.Label>
+            <Form.Control type="email" placeholder="Email"/>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="phone">
+            <Form.Label htmlFor="phone">Phone Number</Form.Label>
+            <Form.Control type="tel" placeholder="Phone Number"/>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="contact">
+            <Form.Label htmlFor="contact">What is your preferred method of contact?</Form.Label>
+            <Form.Control as="select">
+              <option>Phone</option>
+              <option>Email</option>
+            </Form.Control>
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="payment">
+            <Form.Label htmlFor="payment">What is your preferred method of payment?</Form.Label>
+            <Form.Control as="select">
+              <option>Cash</option>
+              <option>Credit Card</option>
+              <option>Paypal</option>
+              <option>Cryptocurrency</option>
+            </Form.Control>
+          </Form.Group>  
+          <Form.Group className="mb-3" controlId="textarea">
+            <Form.Label htmlFor="textarea">Describe the issue with your console.</Form.Label>
+            <Form.Control as="textarea" rows={3} />
+          </Form.Group>
+          <button className='btn btn-primary btn-md service-button btn-outline-dark text-black rounded-pill px-4' style={{ border: '2px solid black', width: '120px', backgroundColor:'red' }}>Submit</button>
+        </Form> 
       </Row>
       <Row>
         <Footer />
