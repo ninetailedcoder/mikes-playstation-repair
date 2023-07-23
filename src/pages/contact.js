@@ -12,9 +12,6 @@ const Contact = () => {
         <Header />
       </Row>
       <Row>
-        <h1>Contact</h1>
-      </Row>
-      <Row>
         <h2 style={{marginLeft: '20px'}} className="d-flex align-item-left">Contact us</h2>
         <hr/>
       </Row>
@@ -39,6 +36,20 @@ const Contact = () => {
  (612) 462-0857</a> <br />
             <a role='button' style={{color: 'black'}} className='btn btn-link' href='email: mikesPSRepair@gmail.com'><i className="fa-solid fa-envelope" /> mikesPSRepair@gmail.com</a>
         </Col>
+      </Row>
+      <Row style={{margin: '20px 20px'}}>
+        <h2>shipping</h2>
+        <hr/>
+        <p className="text-start">If you would like to ship your system/console to us, please complete the following list.</p>
+        <ol className="text-start">
+          <li>Download,Print,Fill out, and email the signed form: <b>no repairs can or will be done until we have this form. </b></li>
+          <li>Fill out the form below to give us the details of your issue; Then wait to here back from us before sending in your console</li>
+          <li>Ship your system to: <br />
+            Mikes PS3/4 Repair <br />
+            829 7th Street E. <br />
+            St. Paul, MN 55106</li>
+        </ol>
+        <p className="text-start"><b>There is a $20.00 return shipping charge and all repairs take about 5 to 7 business days.</b></p>
       </Row>
       <Row>
         <Footer />
