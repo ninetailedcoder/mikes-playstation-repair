@@ -68,19 +68,56 @@ const Contact = () => {
           </Form.Group>
           <Form.Group className="mb-3" controlId="contact">
             <Form.Label htmlFor="contact">What is your preferred method of contact?</Form.Label>
-            <Form.Control as="select">
-              <option>Phone</option>
-              <option>Email</option>
-            </Form.Control>
+            <div>
+              <Form.Check
+                inline
+                type="radio"
+                label="Phone"
+                name="contactMethod"
+                id="phoneRadio"
+              />
+              <Form.Check
+                inline
+                type="radio"
+                label="Email"
+                name="contactMethod"
+                id="emailRadio"
+              />
+            </div>
           </Form.Group>
           <Form.Group className="mb-3" controlId="payment">
             <Form.Label htmlFor="payment">What is your preferred method of payment?</Form.Label>
-            <Form.Control as="select">
-              <option>Cash</option>
-              <option>Credit Card</option>
-              <option>Paypal</option>
-              <option>Cryptocurrency</option>
-            </Form.Control>
+            <div>
+              <Form.Check
+                inline
+                type="radio"
+                label="Cash"
+                name="cash"
+                id="cash"
+              />
+              <Form.Check
+                inline
+                type="radio"
+                label="Credit Card"
+                name="creditCard"
+                id="creditCard"
+              />
+              <Form.Check
+                inline
+                type="radio"
+                label="PayPal"
+                name="payPal"
+                id="payPal"
+              />
+              <Form.Check
+                inline
+                type="radio"
+                label="Cryptocurrency"
+                name="cryptocurrency"
+                id="cryptocurrency"
+              />
+              {/* You can add more radio buttons for other contact methods if needed */}
+            </div>
           </Form.Group>  
           <Form.Group className="mb-3" controlId="textarea">
             <Form.Label htmlFor="textarea">Describe the issue with your console.</Form.Label>
