@@ -1,5 +1,5 @@
 import { Row, Col, Container, Navbar, NavbarToggler } from "reactstrap";
-//import {NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import Logo from "../assets/imgs/Company Logo.jpg";
 import Navigation from "../components/navigation";
 import { useState } from "react";
@@ -49,7 +49,7 @@ const Home = () => {
             Where else can you go and have your system repaired while you wait? <b>99% of our services are done while you wait, watch, & learn very important details about your beloved Playstation 3.</b>
           </p>
           <div className="d-flex justify-content-start">
-            <button className='btn btn-secondary btn-md service-button btn-outline-dark text-black rounded-pill px-4 bg-transparent' style={{ border: '2px solid black', width: '120px' }}>services</button>
+            <button className='btn btn-secondary btn-md service-button btn-outline-dark text-black rounded-pill bg-transparent' style={{ border: '2px solid black', width: '120px' }}><NavLink style={{marginRight: '10px'}} className='nav-link' to='/services'>services</NavLink></button>
           </div>
         </Col>
         <Col lg={5}>

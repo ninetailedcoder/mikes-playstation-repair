@@ -21,6 +21,7 @@ const Footer = () => (
                 <h6>Location</h6>
                 <p>275 4TH STREET E, SAINT PAUL, MN 55101</p>
                 <a role='button' style={{color: 'black'}} className='btn btn-link' href='tel:+16124620857' >(612) 462-0857</a>
+                <a role='button' style={{color: 'black'}} className='btn btn-link' href='email: mikesPSRepair@gmail.com'> mikesPSRepair@gmail.com</a>
             </Col>
         </Row>
     </footer>

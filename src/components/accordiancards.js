@@ -27,12 +27,13 @@ class AccordionCards extends Component {
           {
             key: "3",
             title: "Do you guys work for Sony?",
-            content: "We ARE NOT affiliated with SONY in any way. We offer these services as our own entity, which is Mike's PS3/PS4 Repair.",
+            content: ( <>We <b>ARE NOT</b> affiliated with SONY in any way. We offer these services as our own entity, which is Mike's PS3/PS4 Repair.</>)
           },
           {
             key: "4",
             title: "Do you provide warranties?",
-            content: "We offer warranties on most replacement parts, which are typically up to 30 days or more unless otherwise noted. NOTE: We may need to remove the manufacturer's warranty sticker. Doing so will void warranty you may have.",
+            content: ( <>We offer warranties on most replacement parts, which are typically up to 30 days or more unless otherwise noted. <b>NOTE: We may need to remove the manufacturer's warranty sticker. Doing so will void warranty you may have."</b></>
+            )
           },
           {
             key: "5",
@@ -47,7 +48,9 @@ class AccordionCards extends Component {
           {
             key: "7",
             title: "Can I ship my unit from out of state?",
-            content: "YES; please refer to the contact us/SHIPPING page. You will be responsible for shipping costs both ways.",
+            content: ( <>
+              Yes; please refer to the <a href="/contact">Contact Us</a> page for more information. <b>You will be responsible for shipping costs to and from our location.</b>
+            </>)
           },
           {
             key: "8",
