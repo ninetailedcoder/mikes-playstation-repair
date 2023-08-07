@@ -106,6 +106,15 @@
   margin-bottom: 200px;
 }
 
+/* in xs viewport .form-select should move a few pixels lower on the page */
+
+@media (max-width: 575.98px) {
+  .custom-mb {
+    margin-bottom: 50px;  
+  }
+}
+
+
 .service-button{
   margin-bottom: 10px;
 }
@@ -128,6 +137,14 @@
   margin-left: 40px;
 }
 
+/* remove margin-left from .funfact on xs viewports */
+
+@media (max-width: 575.98px) {
+  .funfact {
+    margin-left: 0px;
+  }
+}
+
 .transparent-button {
   background-color: rgba(0, 0, 0, 0); /* Transparent black */
 }
@@ -135,4 +152,31 @@
 .footer-container-fluid .nav-link {
   margin-right: 30px;
 }
+
+.ps3ps4 {
+  width: 100%;
+  height: auto;
+}
+
+/* in xs viewports .ps3ps4 should shrink  */
+
+@media (max-width: 575.98px) {
+  .ps3ps4 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .aboutmike {
+    height: 70%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .info {
+    flex-direction: column-reverse;
+  }
+}
+
 

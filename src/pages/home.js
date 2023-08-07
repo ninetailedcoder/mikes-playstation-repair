@@ -28,7 +28,7 @@ const Home = () => {
         <Col></Col>
         <Col xs="auto" className="d-flex justify-content-end align-items-end">
           <select
-            className="form-select form-select-lg custom-mb"
+            className="fixes form-select form-select-lg custom-mb"
             value={selectedOption}
             onChange={handleOptionChange}
           >
@@ -53,7 +53,7 @@ const Home = () => {
           </div>
         </Col>
         <Col lg={5}>
-          <img src={ps3ps4} alt="ps3 and ps4" />
+          <img className="ps3ps4" src={ps3ps4} alt="ps3 and ps4" />
         </Col>
       </Row>
 
@@ -63,7 +63,7 @@ const Home = () => {
         </Col>
       </Row>
       <Row className="mt-5">
-        <Col >
+        <Col xs={12} md={6} lg={3}>
           <img
             src={stockphoto3}
             alt="repair photo 3"
@@ -74,7 +74,7 @@ const Home = () => {
             the #1 rated repair shop in the twin cities
           </p>
         </Col>
-        <Col>
+        <Col xs={12} md={6} lg={3}>
           <img
             src={stockphoto2}
             alt="repair photo 2"
@@ -85,7 +85,7 @@ const Home = () => {
             loose your original system with a referbished unit
           </p>
         </Col>
-        <Col>
+        <Col xs={12} md={6} lg={3}>
           <img
             src={stockphoto1}
             alt="repair photo 1"
@@ -93,7 +93,7 @@ const Home = () => {
           />
           <p>We can repair the infamous HDMI problem with broken/bent pins</p>
         </Col>
-        <Col>
+        <Col xs={12} md={6} lg={3}>
           <img
             src={stockphoto4}
             alt="repair photo 4"
@@ -103,14 +103,15 @@ const Home = () => {
         </Col>
       </Row>
       <Row className="mt-5 text-white" style={{ backgroundColor: "black" }}>
-        <Col>
+        <Col xs={12} lg={6}>
           <img
             src={stockphoto5}
             alt="stock playstation 4"
             className="stockplaystaion rounded"
-          />
+            style={{ maxWidth: "100%", height: "auto", marginLeft: "auto", marginRight: "auto", display: "block" }}
+            />
         </Col>
-        <Col className="mt-5">
+        <Col style={{marginTop: '50px'}} xs={12} lg={6}>
           <h2>Don't wait 5 weeks for sony repairs!</h2>
           <p>
             Here all we repair is playstaions and playstations only so the

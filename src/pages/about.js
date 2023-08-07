@@ -13,12 +13,12 @@ const About= () => {
                 <h2>Established in 2009</h2>
                 <hr />
             </Row>
-            <Row>
+            <Row className="info">
                 <Col>
                     <h3>FAQs</h3>
                     <AccordionCards />
                 </Col>
-                <Col style={{backgroundColor: "black",margin: '200px 30px', height: '250px'}} className="d-flex flex-column text-white rounded">
+                <Col style={{backgroundColor: "black",margin: '200px 30px', minHeighteight: '250px'}} className="d-flex flex-column text-white rounded">
                     <h3>About Mike</h3>
                     <p>
                     Mike has been repairing PS3 & PS4's since their initial release date. Not
