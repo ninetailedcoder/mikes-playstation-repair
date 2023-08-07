@@ -26,9 +26,9 @@ const Home = () => {
       <Row className="mt-5 banner-row">
         <Col xs="auto"></Col>
         <Col></Col>
-        <Col xs="auto" className="d-flex justify-content-end align-items-end">
+        <Col xs="auto" className="fixes d-flex justify-content-end align-items-end" style={{marginBottom: "-300px", marginTop: '100px'}}>
           <select
-            className="fixes form-select form-select-lg custom-mb"
+            className="form-select form-select-lg custom-mb"
             value={selectedOption}
             onChange={handleOptionChange}
           >

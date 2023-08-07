@@ -94,23 +94,25 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 100vh;
+  height: auto;
   /* rounded corners */
   border-radius: 10px;
   /* streach image to fit entire web page */
-  width: 100%;
-  
+  min-width: 100%;
+  /* make image responsive */  
 }
 
 .custom-mb {
-  margin-bottom: 200px;
+  margin-bottom: 400px;
+  margin-top: 300px;
 }
+
 
 /* in xs viewport .form-select should move a few pixels lower on the page */
 
 @media (max-width: 575.98px) {
   .custom-mb {
-    margin-bottom: 50px;  
+    margin-bottom: 300px;  
   }
 }
 
@@ -167,9 +169,16 @@
   }
 }
 
+.mike {
+  margin-top: 150px;
+}
+
+/* in xs viewports .mike should shrink  */
+
 @media (max-width: 575.98px) {
-  .aboutmike {
-    height: 70%;
+  .mike {
+    margin-top: 25px;
+    margin-bottom: 50px;
   }
 }
 
@@ -178,5 +187,8 @@
     flex-direction: column-reverse;
   }
 }
+
+
+
 
 
