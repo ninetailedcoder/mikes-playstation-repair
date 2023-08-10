@@ -13,9 +13,13 @@ Follow the link for a live Demo: https://mikesplaystationrepair.web.app/
 #Tech stack used:
 ---------------------------------------------
 HTML5
+
 CSS5
+
 Javascript(ES6)
+
 React
+
 Google Cloud Platform
 
 #To run on your local machine:
