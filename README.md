@@ -9,7 +9,9 @@ Follow the link for a live Demo: https://mikesplaystationrepair.web.app/
 
 <img width="913" alt="playstation repair 3" src="https://github.com/ninetailedcoder/mikes-playstation-repair/assets/108363860/7e3d75dc-ffca-4a9b-9558-df4c5aebf65b">
 
+
 #Tech stack used:
+---------------------------------------------
 HTML5
 CSS5
 Javascript(ES6)
@@ -17,6 +19,7 @@ React
 Google Cloud Platform
 
 #To run on your local machine:
+--------------------------------------------
 git clone https://github.com/ninetailedcoder/mikes-playstation-repair.git
 
 cd Mikes-Playstation-Repair
