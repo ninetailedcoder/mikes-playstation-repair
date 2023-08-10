@@ -1,7 +1,5 @@
 import { Row, Col, Container, Navbar, NavbarToggler } from "reactstrap";
 import {NavLink} from 'react-router-dom'
-import Logo from "../assets/imgs/Company Logo.jpg";
-import Navigation from "../components/navigation";
 import { useState } from "react";
 import ps3ps4 from "../images/ps3-ps4.png";
 import stockphoto1 from "../assets/imgs/stock photo 1.jpg";
@@ -11,6 +9,7 @@ import stockphoto4 from "../assets/imgs/stock photo 4.jpg";
 import stockphoto5 from "../images/stockplaystation4.webp";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import SlideDownBanner from "../components/slideBanner";
 
 const Home = () => {
   const [selectedOption, setSelectedOption] = useState(""); // State to track the selected option
@@ -21,6 +20,7 @@ const Home = () => {
   return (
     <Container fluid>
       <Row style={{ height: '80px' }}  className="text-white align-items-center">
+        <SlideDownBanner />
         <Header />
       </Row>
       <Row className="mt-5 banner-row">

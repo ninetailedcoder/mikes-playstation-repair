@@ -1,1 +1,0 @@
-/* action for dropdown toggle with the following options: YLOD, HDMI, Bluray, Power Supply, Disc Drive, Other */
